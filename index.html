@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form - Prose</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form id="form" action="/">
+      <fieldset>
+        <legend>Registration Form</legend>
+        <div class="form-input">
+          <label for="name">Name:</label>
+          <input class="input-box" type="text" name="name" required />
+        </div>
+        <div class="form-input">
+          <label for="email">Email:</label>
+          <input class="input-box" type="email" name="email" required />
+        </div>
+        <div class="form-input">
+          <label for="location">Location:</label>
+          <input
+            class="input-box"
+            type="text"
+            name="location"
+            autocomplete="street-address"
+            required
+          />
+        </div>
+        <div class="form-input">
+          <label for="country">Country:</label>
+          <input
+            class="input-box"
+            type="text"
+            name="country"
+            autocomplete="country-name"
+            required
+          />
+        </div>
+        <div class="form-input">
+          <label for="state">State/City:</label>
+          <input
+            class="input-box"
+            type="text"
+            name="state"
+            autocomplete="address-level1"
+            required
+          />
+        </div>
+        <div class="form-input">
+          <label for="degree">Degree/Educational Institution:</label>
+          <textarea
+            name="textarea"
+            rows="5"
+            cols="30"
+            minlength="10"
+            maxlength="20"
+            required
+          ></textarea>
+        </div>
+        <div class="form-input">
+          <label for="work">Work History/Job Description/Where:</label>
+          <textarea
+            name="textarea"
+            rows="5"
+            cols="30"
+            minlength="10"
+            maxlength="20"
+            required
+          ></textarea>
+        </div>
+        <p>
+          If you are not experienced with tracking documents in MS Word, below
+          is a document explaining how it works, including a link to a video.
+        </p>
+
+        <div class="edit-tracking">
+          <a
+            href="./Editing-a-Tracked-Document-in-Word.docx"
+            download="proposed_file_name"
+            ><img src="./download-button.svg" alt="Download"
+          /></a>
+          <p>Editing a Tracked Document in Word</p>
+        </div>
+
+        <div class="samples-container">
+          <h4>
+            Here are the two short sample edits for you to complete. Please use
+            British English for #1 and US English for #2 with both in APA 7th
+            edition style.
+          </h4>
+          <p class="eng">#1) Use <span>British English</span> for this edit</p>
+          <div class="edit-samples">
+            <a href="./Sample-Edit-1.docx" download="proposed_file_name"
+              ><img src="./download-button.svg" alt="Download"
+            /></a>
+            <p>Sample Edit 1</p>
+          </div>
+          <p class="eng">#2) Use <span>US English</span> for this edit</p>
+          <div class="edit-samples">
+            <a href="./Sample-Edit-2.docx" download="proposed_file_name"
+              ><img src="./download-button.svg" alt="Download"
+            /></a>
+            <p>Sample Edit 2</p>
+          </div>
+        </div>
+
+        <div class="upload-docs">
+          <p>Please Submit Completed Edits by placing in the area below:</p>
+          <p>Upload your documents here</p>
+
+          <div class="uploads">
+            <div class="uploads-edited">
+              <img src="./download-button.svg" alt="Upload" />
+              <input
+                type="file"
+                id="Doc-1"
+                name="Doc-1"
+                accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+              />
+            </div>
+            <div class="uploads-edited">
+              <img src="./download-button.svg" alt="Upload" />
+              <input
+                type="file"
+                id="Doc-2"
+                name="Doc-2"
+                accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="before-submit">
+          <p>
+            Again, please ensure that all of your personal information is
+            entered above before you submit your completed sample edits.
+          </p>
+        </div>
+
+        <div class="submit-box">
+          <input class="submit-btn" type="submit" value="SUBMIT" />
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
